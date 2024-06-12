@@ -1,0 +1,137 @@
+.sabores_main_container {
+    .capa {
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: url('../../../public/banner-sabores.jpg') no-repeat center;
+        background-size: cover;
+
+        h1 {
+            font-size: 100px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 3px 5px 2px #474747;
+
+            @media (max-width: 1080px) {
+                font-size: 80px;
+            }
+
+            @media (max-width: 1024px) {
+                font-size: 70px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 50px;
+            }
+
+            @media (max-width: 375px) {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .infos_container {
+        width: 100%;
+        padding: 100px 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        @media (max-width: 768px) {
+            padding: 80px 15px;
+        }
+
+        @media (max-width: 375px) {
+            padding: 60px 10px;
+        }
+
+        .cards_container {
+            max-width: 1024px;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            @media (max-width: 768px) {
+                gap: 15px;
+            }
+
+            @media (max-width: 375px) {
+                gap: 10px;
+            }
+
+            .card_sabor {
+                width: 300px;
+                height: 420px;
+                padding: 20px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                box-shadow: 2px 2px 15px 2px #d9dde1;
+
+                @media (max-width: 768px) {
+                    width: 260px;
+                    height: 380px;
+                }
+
+                @media (max-width: 375px) {
+                    width: 220px;
+                    height: 340px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                    text-align: center;
+
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
+
+                    @media (max-width: 375px) {
+                        font-size: 14px;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    text-align: center;
+
+                    @media (max-width: 768px) {
+                        font-size: 14px;
+                    }
+
+                    @media (max-width: 375px) {
+                        font-size: 12px;
+                    }
+                }
+
+                img {
+                    width: auto;
+                    height: 220px;
+
+                    @media (max-width: 768px) {
+                        height: 200px;
+                    }
+
+                    @media (max-width: 375px) {
+                        height: 180px;
+                    }
+                }
+            }
+        }
+    }
+}
